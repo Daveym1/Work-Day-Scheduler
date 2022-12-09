@@ -1,22 +1,30 @@
 $(document).ready(function(){
 
- $(".saveBtn").on("click", function(){
+  // getStorageItems();
 
-var value = $(this).siblings(".list-content").val();
-var time = $(this).siblings(".hour")
+  // function getStorageItems(){
+  //   if (localStorage)
+  //   localStorage.getItem("time", time);
+  //   localStorage.getItem("value", value);
+  // }
 
- });
-
-    
   
-  var currentDay = $('#currentDay');
-    currentDay.text = moment();
 
-    // var currentDay = document.getElementById("currentDay");
-    // currentDay.textContent = moment();
+  currentDay = moment().format('dddd, MMM Do YYYY');
+  $('#currentDay').html(currentDay);
 
-   
+    var currentDay = document.getElementById("currentDay");
+    currentDay.textContent = moment();
+
  
+    $(".saveBtn").on("click", function(){
 
-  
-  });
+    var value = $(this).siblings(".list-content").val();
+    var time = $(this).siblings(".hour").text();
+    console.log(time + " " + value);
+    localStorage.setItem(time, value);
+    
+
+    });
+
+});
