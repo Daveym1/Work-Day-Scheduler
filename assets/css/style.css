@@ -53,6 +53,7 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   background-color: #ffffff;
   color: #000000;
   border-top: 1px solid #000000;
@@ -102,9 +103,32 @@ textarea {
  }
 
 .saveBtn i:hover {
-  font-size: 20px;
-  transition: all 0.3s ease-in-out;
   color: #000000;
+
+}
+
+.deleteBtn {
+  border-left: 1px solid black;
+  border-radius: 30px;
+  background-color: #ffffff;
+  
+  color: #ff0000;
+  width: 5%;
+  text-align: center;
+  padding: 1rem;
+  margin-left: 0.5rem;
+}
+
+.deleteBtn i {
+  display: flex;
+  justify-content: center;
+ }
+
+.deleteBtn:hover {
+  
+  color: #ffffff;
+  background-color: #ff0000 ;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 
 }
 
