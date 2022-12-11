@@ -2,11 +2,17 @@
   box-sizing: border-box;
 }
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Plex', sans-serif;
   font-size: 16px;
   line-height: 1;
   width:100vw;
+  background-color: #FAF7F0;
 }
 
 textarea {
@@ -19,11 +25,27 @@ textarea {
 }
 
 .jumbotron {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  font-family: 'Plex', sans-serif;
   text-align: center;
   background-color: transparent;
   color: black;
   border-radius: 0;
   border-bottom: 10px solid black;
+  margin: 1rem auto;
+}
+
+.saved {
+  align-self: center;
+  width: 20%;
+  background-color: #98A8F8;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  font-family: 'Plex', sans-serif;
+  font-size: 24px;
 }
 
 .description {
@@ -31,10 +53,20 @@ textarea {
 }
 
 #currentDay {
-  background-color: #d3d3d3;
+  background-color: #FAF7F0;
+}
+
+.container {
+
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+
 }
 
 .time-block {
+  display: flex;
   text-align: center;
   border-radius: 15px;
   list-style: none;
@@ -56,7 +88,7 @@ textarea {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: #ffffff;
+  background-color: #FAF7F0;
   color: #000000;
   border-top: 1px solid #000000;
   border-bottom: 1px solid #000000;
@@ -80,12 +112,12 @@ textarea {
 
 .present {
   background-color: #ff6961;
-  color: white;
+  color: black;
 }
 
 .future {
   background-color: #77dd77;
-  color: white;
+  color: black;
 }
 
 .saveBtn {

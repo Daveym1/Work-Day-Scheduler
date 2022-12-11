@@ -24,8 +24,17 @@ $(document).ready(function(){
 
     var value = $(this).siblings(".list-content").val();
     var time = $(this).parent().attr("id");
+    var saved = $("#saved");
     console.log(time + " " + value);
     localStorage.setItem(time, value);
+
+    document.getElementById("saved").innerHTML = "Saved!";
+
+setTimeout(function(){
+    document.getElementById("saved").innerHTML = '';
+}, 3000);
+    
+
     
     });
 
