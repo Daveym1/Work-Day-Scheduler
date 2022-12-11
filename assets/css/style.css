@@ -6,6 +6,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
+  width:100vw;
 }
 
 textarea {
@@ -41,10 +42,11 @@ textarea {
 
 .row {
   display: flex;
+  flex-wrap: nowrap;
   align-content: center;
   padding: 1rem;
-  /* white-space: pre-wrap; */
-  width: 100%;
+  white-space: nowrap;
+  width: 100vw;
   height: 80px;
   border-top: 1px solid white;
 }
@@ -59,12 +61,12 @@ textarea {
   border-top: 1px solid #000000;
   border-bottom: 1px solid #000000;
   margin-right: 2rem;
-  width: 5%
+  width: 5vw;
 }
 
 .list-content {
   display: flex;
-  width: 75%;
+  width: 65vw;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -92,7 +94,7 @@ textarea {
   border-bottom-right-radius: 15px;
   background-color: #06aed5;
   color: white;
-  width: 5%;
+  width: 5vw;
   text-align: center;
   padding: 1rem;
 }
@@ -113,7 +115,7 @@ textarea {
   background-color: #ffffff;
   
   color: #ff0000;
-  width: 5%;
+  width: 5vw;
   text-align: center;
   padding: 1rem;
   margin-left: 0.5rem;
